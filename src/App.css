@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-align{
+  margin-left: 330px;
+  margin-top: 50px;
+}
+
+.bg-img-1{
+  background-image: url('./images/cate-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 35px 50px;
+}
+
+.bg-img-2{
+  background-image: url('./images/cate-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 35px 50px;
+}
+.animationText{
+  animation: identifier 1s ease-in-out ;
+}
+
+@keyframes identifier {
+   from{
+    transform: translateY(-200px);
+   }
+   to {
+   
+    transform: translateY(0);
+  }
+}
+
+
+.comment-banner{
+  background-image: url("./images/comment-banner.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1
+}
+
+
+/* menu dropdown */
+.drop-content{
+ transform: translate(0, -600px);
+ transition-delay: 0.2s;
+ 
+}
+
+.dropdown:hover .drop-content{
+  transform: translate(0);
+  
+}
+
+.active-User:hover .menu-user{
+  opacity: 1;
+}
+
+.awssld__content p:nth-child(n) {
+  font-size: 2rem !important;
+}
+
+@media (max-width: 500px) {
+  .awssld__content p:nth-child(n) {
+    font-size: 1.5rem !important;
+  }
+
+  .awssld__controls__arrow-left, .awssld__controls__arrow-right{
+    display: none;
+  }
+}
