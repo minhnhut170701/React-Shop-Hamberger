@@ -11,15 +11,9 @@ const BlogItem = () => {
 
         <section className='max-w-5xl mr-auto ml-auto p-4 mt-10 space-y-4'>
             <div className='p-10 space-y-8'>
-                <h1 className='text-4xl font-bold break-words'>ALIQUAM AUGUE PURUS, LUCTUS NEQUE ETIAM AN IPSUM AND NEQUE</h1>
+                <h2 className='text-4xl font-bold break-words'>Những loại bánh mì hamburger ngon nhất</h2>
                 {/* text-1 */}
-                <p className='text-style'>Mauris donec ociis et magnis sapien etiam sapien sem 
-                    sagittis congue tempor a gravida donec ipsum aporta justo integer 
-                    at odio velna. Maecenas gravida porttitor nunc, quis vehicula magna 
-                    luctus tempor. Quisque vel laoreet turpis. An augue viverra a augue eget,
-                    dictum tempor diam. Sed pulvinar donec ociis et magnis sapien imperdiet 
-                    dui varius placerat imperdiet dui varius viverra augue egestas luctus 
-                    donec purus and blandit</p>
+                <p className='text-style italic'>Bạn là một người yêu thích các loại bánh mì hamburger? Bạn muốn tìm thấy những loại hamburger mới để trải nghiệm? Hôm nay của hàng PizzaforPeople của chứng tôi sẽ giời thiệu cho bạn các loại bánh mì hamburger được ưa chuộng nhất.</p>
             </div>
 
             {/* img 1 blog */}
@@ -27,22 +21,16 @@ const BlogItem = () => {
             alt='error' className='w-full h-full' />
             {/* Text-2 */}
             <div className='p-10 space-y-8'>
-                <p className='text-style'>Aliqum mullam blandit tempor sapien gravida donec ipsum, at porta justo. Velna vitae auctor congue magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam sapien sagittis congue tempor a gravida donec enim ipsum porta justo integer at odio velna. Maecenas gravida porttitor nunc, quis vehicula magna at luctus tempor. Quisque vel laoreet turpis. Urna augue, viverra a augue eget, dictum tempor diam. Sed pulvinar consectetur nibh, vel imperdiet dui varius viverra. Pellentesque ac massa lorem fusce eu cursus fusce</p>
-                <p className='text-style'>Donec dolor suscipit magna vehicula impedit ligula risus. Mauris donec ociis et magnis sapien etiam sapien sem sagittis congue tempor gravida porttitor nunc, quis vehicula magna. Placerat varius consectetur nibh, vel imperdiet dui varius viverra donec ociis et magnis</p>
-                <p className='text-style'>Cubilia laoreet augue egestas cursus magna nihil impedit ligula risus. Mauris donec ociis et magnis sapien etiam sapien rutrum tempor mullam blandit tempor sapien and gravida Maecenas gravida porttitor nunc, quis vehicula magna luctus tempor. Quisque laoreet turpis urna augue, viverra a augue eget, dictum tempor diam.</p>
+                <h2 className='text-xl font-bold break-words'>Bánh mì hamburger của mỹ</h2>
+                <p className='text-style'>Những cái bánh burger vĩ đại của Mỹ đã trở nên nặng ký giống như vận động viên đô vật trong thời gian gần đây. Trong những chuỗi nhà hàng thức ăn nhanh và đắt tiền, nó gần như là cực kỳ khổng lồ.</p>
+                <p className='text-style'>Ai muốn nướng một cái bánh burger to hoàn hảo ngon lành với nước sốt hợp với chế độ ăn kiêng cũng không cần quá lo lắng. Một vài mẹo nhỏ trong quá trình chế biến sẽ rất có lợi cho sức khỏe. Nếu thích đơn giản, hãy gọi món burger phô mai; cần bánh nhiều hương vị thì burger poblano rất thích hợp. Nếu bạn thích cá, burger cá hồi gồm alpha và omega 3. Tất cả hương vị trên đều phù hợp với mọi khẩu vị.</p>
             </div>
             
             {/* text-3 */}
             <div className='p-10 space-y-8'>
                 <h5 className='text-xl font-bold'>
-                PRAESENT ALIQUET TEMPUS
-                    <br />
-                (TEMPOR GRAVIDA IPSUM AS AN EXAMPLE)
+                Burger thịt cừu với gia vị Ấn độ
                 </h5>
-                <p className='text-black'>Sagittis congue augue egestas volutpat egestas magna suscipit egestas magna ipsum vitae purus efficitur ipsum primis in cubilia laoreet augue egestas luctus donec diam. Curabitur ac dapibus libero. Mauris donec ociis a neque. Phasellus blandit tristique justo ut aliquam. Aliquam vitae molestie nunc sapien justo, aliquet non molestie augue, venenatis nec purus. Aliquam eget lacinia elit. Augue tincidunt tincidunt massa</p>
-                <p className='list-item text-style ml-6'>Donec dolor magna, suscipit in magna dignissim, porttitor hendrerit diam. Nunc gravida ultrices felis eget faucibus. Praesent aliquet tempus, blandit posuere ligula varius</p>
-                <p className='list-item text-style ml-6'>Fringilla risus nec, luctus mauris orci auctor euismod purus pretium purus pretium ligula rutrum tempor mullam blandit tempor sapien and gravida donec ipsum at justo</p>
-                <p className='list-item text-style ml-6'>Quaerat sodales sapien undo euismod purus blandit velna vitae auctor a congue magna tempor sapien eget gravida laoreet turpis urna augue, viverra a augue eget, dictum tempor diam pulvinar consectetur purus efficitur ipsum primis in cubilia laoreet augue donec</p>
                 <section className='flex items-center space-x-4'>
                     <div>
                         <img src="https://jthemes.net/themes/html/testo/files/images/blog/img-01.jpg" alt='error' className='w-full h-full' />
@@ -53,15 +41,32 @@ const BlogItem = () => {
                         <p>Gravida porttitor nunc, quis vehicula tempor</p>
                     </div>
                 </section>
-                <p>Nulla tincidunt volutpat tincidunt. Pellentesque habitant morbi tristique senectus et netus and malesuada famesa augue suscipit, luctus at neque purus neque dolor primis. Nemo sodales ipsam egestas volute turpis a dolores aliquam quaerat sodales sapien congue augue eget gravida laoreet turpis urna augue, viverra a augue eget, dictum dictum tempor diam. Sed pulvinar consectetur and placerat imperdiet</p>
-                <p className='list-item text-style ml-6'>Donec dolor magna, suscipit in magna dignissim, porttitor hendrerit diam. Nunc gravida ultrices felis eget faucibus. Praesent aliquet tempus, blandit posuere ligula varius</p>
-                <p className='list-item text-style ml-6'>Fringilla risus nec, luctus mauris orci auctor euismod purus pretium purus pretium ligula rutrum tempor mullam blandit tempor sapien and gravida donec ipsum at justo</p>
+                <p className='text-style'>Phần nhân bánh được chế biến từ thịt cừu chăn nuôi ngoài đồng, loại thịt nạc vai chứa 2/3 lượng mỡ ít hơn thịt cừu nuôi siêu thịt. Để thịt ngon hơn thì nên xay nó nhỏ hơn trước khi chế biến. Thịt sau khi xay được tẩm ướp vadouvan, loại gia vị hỗn hợp của Ấn Độ được sử dụng nhiều trong việc tẩm ướp thịt nướng. Gia vị này kết hợp từ bột cà ri, thêm tỏi, hành khô.</p>
             </div>
 
             <div className='p-10 space-y-8'>
-                <h5 className='text-xl font-bold'>EGESTAS VOLUTPAT EGESTAS</h5>
-                <p className='text-style'>In at mauris vel nisl convallis porta at vitae dui. Nam lacus ligula, vulputate molestie bibendum quis, aliquet elementum massa. Vestibulum ut sagittis odio. Ac massa lorem. Fusce eu cursus est. Fusce non nulla vitae massa placerat vulputate vel a purus. Aliqum mullam blandit tempor sapien gravida donec</p>
-                <p className='text-style'>Maecenas gravida porttitor nunc, quis vehicula magna luctus tempor. Quisque vel laoreet turpis urna augue, viverra a augue eget, dictum tempor diam. Sed pulvinar consectetur nibh, vel imperdiet dui varius viverra. Sapien justo massa lorem. Fusce eu cursus non nulla vitae massa placerat purus. Sagittis congue augue egestas volutpat egestas magna suscipit egestas magna ipsum vitae purus efficitur ipsum primis in cubilia laoreet augue egestas luctus donec</p>
+                <h5 className='text-xl font-bold'>Burger gà tây với tương ớt vị cranberry</h5>
+                <p className='text-style'>Bạn hãy thưởng thức hương vị của Lễ Tạ ơn suốt cả năm bằng món burger gà tây. Thịt làm nhân nên chọn mua thịt ức gà tây thả vườn, đây là phần thịt trắng có rất ít mỡ và calori. Ăn kèm có rau quả khô và nho đỏ. </p>
+                <div className='w-full h-[300px] bg-red-600' />
+            </div>
+
+            <div className='p-10 space-y-8'>
+                <h5 className='text-xl font-bold'>Burger theo kiểu Đức với Feta Aioli</h5>
+                <p className='text-style'>Loại burger này được nhồi với ớt chuông và rau diếp nướng mang hương vị Đức. Đồ ăn Đức nổi tiếng về những thành phần có lợi cho sức khỏe như rau, dầu oliu. Do đó những burger này là sự lựa chọn thay thế lành mạnh hơn so với các burger truyền thống.</p>
+                <div className='w-full h-[300px] bg-red-600' />
+            </div>
+
+            <div className='p-10 space-y-8'>
+                <h5 className='text-xl font-bold'>Burger gà tây với cà tím nướng</h5>
+                <p className='text-style'>Làm sao bạn có thể mua một burger được làm từ con gà tây mềm ít mỡ mà có thịt như thịt bò? Hãy thêm vào thành phần vị umami (vị ngon) của một vài loại thịt trong quá trình chế biến. Đây là công thức nấu ăn: Thịt bò và các thịt đỏ khác có chứa một hỗn hợp được gọi là glutamate. Nước tương và marmite, một loại men cực mạnh bán nhiều trong siêu thị (người Australia rất thích loại Vegemite), có chất này, thêm một ít vào gà tây sẽ làm cho burger có vị umami của thịt.
+                Nước sốt làm từ cà tím. Chỉ cần nướng cà tím với dầu oliu, sau đó làm nhuyễn và trộn với thịt.
+                </p>
+                <div className='w-full h-[300px] bg-red-600' />
+            </div>
+            <div className='p-10 space-y-8'>
+                <p className='text-style'>Trên đây là một trong những loại bánh mì hamburger hảo hạn mà chúng tôi đã giới thiệu đến bạn.</p>
+                <p className='text-style'>Tại cửa hàng PizzafoPeople của chứng tôi có bán tất cả các loại burger trên và chúng tôi đang có chương trình giảm giá cho những khách hàng đầu tiên.</p>
+                <p className='text-style'>Chúc bạn vào ngày tốt lành. Để xem thông tin chi tiết vui lòng liên hệ 0123456789</p>
                 <div className='w-full h-[300px] bg-red-600' />
             </div>
 
@@ -72,7 +77,7 @@ const BlogItem = () => {
           {/* Conntact */}
           <aside className='max-w-6xl mr-auto ml-auto mt-28 
         text-center border bg-gray-100 space-y-4 p-10'>
-            <h1 className='text-2xl font-bold'>SUBSCRIBE TO NEWSLETTER</h1>
+            <h2 className='text-2xl font-bold'>SUBSCRIBE TO NEWSLETTER</h2>
             <p className='text-gray-500'>Subscribe to the weekly newsletter for all the latest updates</p>
             <form className='flex justify-center space-x-2'>
                 <input type='text' placeholder='Your email address' required
