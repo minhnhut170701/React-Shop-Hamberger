@@ -7,6 +7,9 @@
     @apply font-light leading-7 text-lg
   }
 }
+.color-text{
+  color: white !important;
+}
 
 .menu-align{
   margin-left: 330px;

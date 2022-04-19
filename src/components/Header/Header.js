@@ -43,19 +43,19 @@ const Header = () => {
             
             >
             <div data-src={img1} className="relative z-50 -top-20">
-                <p className='text-white font-bold mb-14 max-w-2xl lg:max-w-4xl
+                <p className='color-text font-bold mb-14 max-w-2xl lg:max-w-4xl
                 mt-36 lg:-mt-0'>Good Time Great Taste.</p>
-                <p className='text-white font-bold text-3xl'>Enjoy the food you love <span className='text-yellow-500'>FROM $6.99</span></p>
+                <p className='color-text font-bold text-3xl'>Enjoy the food you love <span className='text-yellow-500'>FROM $6.99</span></p>
             </div>
             <div data-src={img2} className="relative z-50 -top-20">
-                <p className='text-white font-bold mb-14 max-w-2xl lg:max-w-4xl
+                <p className='color-text font-bold mb-14 max-w-2xl lg:max-w-4xl
                 mt-36 lg:mt-0'>Good Time Great Taste.</p>
-                <p className='text-white font-bold text-3xl'>Enjoy the food you love <span className='text-yellow-500'>FROM $6.99</span></p>
+                <p className='color-text font-bold text-3xl'>Enjoy the food you love <span className='text-yellow-500'>FROM $6.99</span></p>
             </div>
             <div data-src={img3} className="relative z-50 -top-20">
-                <p className='text-white font-bold mb-14 max-w-2xl lg:max-w-4xl
+                <p className='color-text font-bold mb-14 max-w-2xl lg:max-w-4xl
                mt-36 lg:mt-0'>Good Time Great Taste.</p>
-                <p className='text-white font-bold text-3xl'>Enjoy the food you love <span className='text-yellow-500'>FROM $6.99</span></p>
+                <p className='color-text font-bold text-3xl'>Enjoy the food you love <span className='text-yellow-500'>FROM $6.99</span></p>
             </div>
          </AutoplaySlider>
       </div>
