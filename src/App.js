@@ -31,7 +31,8 @@ import Login from './components/Login/Login';
 
 import SignUp from './components/Login/SignUp';
 import { AuthProvider } from './contexts/AuthContext';
-import PrivateRoute from './PrivateRoute';
+import BlogItem from './components/Blog/BlogItem';
+
 
 
 
@@ -55,6 +56,7 @@ function App() {
                 </Route>
                 <Route path='/cart' element={<Cart />} />
                 <Route path='/blog' element={<Blogs />} />
+                <Route path='/blogSinger' element={<BlogItem />} />
                 <Route path='/checkout' element={<Pay />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/signup' element={<SignUp />} />
@@ -67,7 +69,7 @@ function App() {
                         }
                   />     
             </Routes>
-            </AuthProvider>
+          </AuthProvider>
       
       <Footer />  
       </BrowserRouter>

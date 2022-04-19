@@ -26,7 +26,7 @@ const Blogs = () => {
         {/* infor */}
         <div className='max-w-6xl mr-auto ml-auto mt-10'>
             {/* favblog */}
-            <section className='max-w-4xl flex space-x-4 border ml-auto mr-auto'>
+            <section className='max-w-6xl flex space-x-4 border ml-auto mr-auto'>
                 <div className='overflow-hidden'>
                     <img src={img1} alt="error" className='w-full hover:scale-110 transition-all duration-400 ease-in-out'/>
                 </div>
@@ -47,7 +47,7 @@ const Blogs = () => {
             </section>
 
             {/* list blog */}
-            <section className='max-w-4xl mr-auto ml-auto mt-10 space-y-4'>
+            <section className='max-w-6xl mr-auto ml-auto mt-10 space-y-4'>
                 <h1 className='text-xl font-bold border-b-black border border-transparent pb-2'>LATEST ARTICLES</h1>
                 <div className='flex items-center space-x-4'>
                     {data.slice(0,3).map((item) =>(
@@ -60,7 +60,7 @@ const Blogs = () => {
             </section>
 
             {/* most read */}
-            <section className='max-w-4xl mr-auto ml-auto mt-10 space-y-4'>
+            <section className='max-w-6xl mr-auto ml-auto mt-10 space-y-4'>
                 <h1 className='text-xl font-bold border-b-black border border-transparent pb-2'>MOST READ ARTICLES</h1>
                 <div>
                     {data.slice(3,5).map((item) =>(
@@ -74,7 +74,7 @@ const Blogs = () => {
         </div>
 
         {/* Conntact */}
-        <aside className='max-w-4xl mr-auto ml-auto mt-28 
+        <aside className='max-w-6xl mr-auto ml-auto mt-28 
         text-center border bg-gray-100 space-y-4 p-10'>
             <h1 className='text-2xl font-bold'>SUBSCRIBE TO NEWSLETTER</h1>
             <p className='text-gray-500'>Subscribe to the weekly newsletter for all the latest updates</p>
