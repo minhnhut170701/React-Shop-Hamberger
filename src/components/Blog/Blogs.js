@@ -1,4 +1,7 @@
 import React from 'react';
+
+import {Link} from "react-router-dom"
+
 //data
 import data from "../../data/blog";
 
@@ -27,9 +30,9 @@ const Blogs = () => {
         <div className='max-w-6xl mr-auto ml-auto mt-10'>
             {/* favblog */}
             <section className='max-w-6xl flex space-x-4 border ml-auto mr-auto'>
-                <div className='overflow-hidden'>
+                <Link to="/blogSinger" className='overflow-hidden'>
                     <img src={img1} alt="error" className='w-full hover:scale-110 transition-all duration-400 ease-in-out'/>
-                </div>
+                </Link>
                 <div className='mt-5 w-[70%] p-4 space-y-4'>
                     <h1 className='text-2xl font-bold'>QUAERAT NEQUE PURUS IPSUM A NEQUE DOLOR</h1>
                     <p className='text-gray-400'>ALIQUM MULLAM BLANDIT TEMPOR AT SAPIEN GRAVIDA DONEC IPSUM JUSTO LECTUS AENEAN MAGNA...</p>
