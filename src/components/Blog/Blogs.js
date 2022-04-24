@@ -30,12 +30,12 @@ const Blogs = () => {
         <div className='max-w-6xl mr-auto ml-auto mt-10'>
             {/* favblog */}
             <section className='max-w-6xl flex space-x-4 border ml-auto mr-auto'>
-                <Link to="/banh-mi-hamhuger" className='overflow-hidden'>
+                <Link to="/banh-mi-hamburger" className='overflow-hidden'>
                     <img src={img1} alt="error" className='w-full hover:scale-110 transition-all duration-400 ease-in-out'/>
                 </Link>
                 <div className='mt-5 w-[70%] p-4 space-y-4'>
-                    <h1 className='text-2xl font-bold'>QUAERAT NEQUE PURUS IPSUM A NEQUE DOLOR</h1>
-                    <p className='text-gray-400'>ALIQUM MULLAM BLANDIT TEMPOR AT SAPIEN GRAVIDA DONEC IPSUM JUSTO LECTUS AENEAN MAGNA...</p>
+                    <h2 className='text-2xl font-bold'>Những loại bánh mì hamburger ngon nhất</h2>
+                    <p className='text-gray-400 break-words'>Bạn là một người yêu thích các loại bánh mì hamburger? Bạn muốn tìm thấy những loại hamburger mới để trải nghiệm? Hôm nay của hàng PizzaforPeople của chứng tôi sẽ giời thiệu cho bạn các loại bánh mì hamburger được ưa chuộng nhất.</p>
                     <div className='flex items-center space-x-5'>
                         <section className='text-gray-400 flex items-center space-x-2'>
                             <ChatBubbleIcon  fontSize='medium' />
