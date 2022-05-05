@@ -1,5 +1,8 @@
 import React from 'react'
 import Header from '../Header/Menu';
+import invoices from "../../data/item" 
+import {Link} from "react-router-dom";
+import { getInvoice } from "../../data/item";
 
 import img1 from "../../images/blog/banh-mi-hamburger.jpg";
 import img2 from "../../images/blog/banh-mi-hamburger-mi.jpg";
@@ -8,7 +11,11 @@ import img4 from "../../images/blog/banh-mi-hamburger-ga-tay.jpg";
 import img5 from "../../images/blog/banh-mi-hamburger-duc.jpg";
 import img6 from "../../images/blog/banh-mi-hamburger-ga-tim.jpg";
 
+import video1 from "../../images/blog/video/buger-review.mp4"
+
 const BlogItem = () => {
+    
+   
   return (
     <div>
         <div className='bg-blog-pattern h-[400px] flex'>
@@ -20,19 +27,35 @@ const BlogItem = () => {
             <div className='p-10 space-y-8'>
                 <h2 className='text-4xl font-bold break-words'>Những loại bánh mì hamburger ngon nhất</h2>
                 {/* text-1 */}
-                <p className='text-style italic'>Bạn là một người yêu thích các loại bánh mì hamburger? Bạn muốn tìm thấy những loại hamburger mới để trải nghiệm? Hôm nay của hàng PizzaforPeople của chứng tôi sẽ giời thiệu cho bạn các loại bánh mì hamburger được ưa chuộng nhất.</p>
+                <p className='text-style italic'>Bạn là một người yêu thích các loại bánh mì hamburger? 
+                Chiếc<Link to="/" className='text-blue-600 underline'>vỏ của bánh mì hamburger</Link>   
+                khiến bạn muốn thưởng thức chúng ngay
+                 Bạn muốn tìm thấy những loại hamburger mới để trải nghiệm? 
+                 Hôm nay của hàng <Link to="/" className='text-blue-600 underline'>PizzaforPeople</Link> 
+                 của chứng tôi sẽ giời thiệu 
+                 cho bạn các loại bánh mì hamburger được ưa chuộng nhất.</p>
+                  {/* img 1 blog */}
+                <video src={video1} muted autoPlay loop className="w-full border"></video>
             </div>
 
-            {/* img 1 blog */}
-            <img src={img1}
-            alt='banh-mi-hamburger' className='w-full h-full' /> 
+           
             {/* Text-2 */}
             <div className='p-10 space-y-8'>
                 <h2 className='text-xl font-bold break-words'>Bánh mì hamburger của mỹ</h2>
-                <p className='text-style'>Những cái bánh burger vĩ đại của Mỹ đã trở nên nặng ký giống như vận động viên đô vật trong thời gian gần đây. Trong những chuỗi nhà hàng thức ăn nhanh và đắt tiền, nó gần như là cực kỳ khổng lồ.</p>
-                <p className='text-style'>Ai muốn nướng một cái bánh burger to hoàn hảo ngon lành với nước sốt hợp với chế độ ăn kiêng cũng không cần quá lo lắng. Một vài mẹo nhỏ trong quá trình chế biến sẽ rất có lợi cho sức khỏe. Nếu thích đơn giản, hãy gọi món burger phô mai; cần bánh nhiều hương vị thì burger poblano rất thích hợp. Nếu bạn thích cá, burger cá hồi gồm alpha và omega 3. Tất cả hương vị trên đều phù hợp với mọi khẩu vị.</p>
-                <img src={img2}
-                alt='banh-mi-hamburger-mi' className='w-full h-full' /> 
+                <p className='text-style'>Những cái bánh burger vĩ đại của Mỹ đã trở nên nặng ký 
+                giống như vận động viên đô vật trong thời gian gần đây. Với những 
+                <span className='font-bold underline'>công thức</span>  đặc biệt
+                Trong những chuỗi nhà hàng thức ăn nhanh và đắt tiền, nó gần như là cực kỳ khổng lồ.</p>
+                <p className='text-style pb-3'>Ai muốn nướng một cái bánh burger to hoàn hảo ngon lành với nước sốt hợp với 
+                chế độ ăn kiêng cũng không cần quá lo lắng. Một vài mẹo nhỏ trong quá trình chế biến sẽ rất 
+                có lợi cho sức khỏe. Nếu thích đơn giản, hãy gọi món burger phô mai; cần bánh nhiều hương vị 
+                thì burger poblano rất thích hợp. Nếu bạn thích cá, burger cá hồi gồm alpha và omega 3. 
+                Tất cả hương vị trên đều phù hợp với mọi khẩu vị. Bạn có thể xem thêm về burger này tại 
+                <span className='text-blue-600 underline'>đây</span></p>
+                <Link to={`/1/banh-mi-hamburger`}>
+                        <img src={img2} alt='banh-mi-hamburger-mi' className='w-full h-full' /> 
+                </Link>
+               
             </div>
             
             {/* text-3 */}
@@ -41,10 +64,10 @@ const BlogItem = () => {
                 Burger thịt cừu với gia vị Ấn độ
                 </h5>
                 <section className='flex items-center space-x-4'>
-                    <div className='w-[50%]'>
+                    <Link to={`/2/banh-mi-hamburger`} className='w-[50%]'>
                         <img src="https://jthemes.net/themes/html/testo/files/images/blog/img-01.jpg" alt='cua-hang-hamburger' className='w-full h-[300px]' />
                         <p>Maecenas gravida porttitor nunc, quis vehicula magna</p>
-                    </div>
+                    </Link>
                     <div className='w-[50%]'>
                         <img src={img3} alt='banh-mi-hamburger-an-do' className='w-full h-[300px]' />
                         <p>Gravida porttitor nunc, quis vehicula tempor</p>

@@ -30,7 +30,7 @@ const Blogs = () => {
         <div className='max-w-6xl mr-auto ml-auto mt-10'>
             {/* favblog */}
             <section className='max-w-6xl flex space-x-4 border ml-auto mr-auto'>
-                <Link to="/banh-mi-hamburger" className='overflow-hidden'>
+                <Link to="/blog/banh-mi-hamburger" className='overflow-hidden'>
                     <img src={img1} alt="error" className='w-full hover:scale-110 transition-all duration-400 ease-in-out'/>
                 </Link>
                 <div className='mt-5 w-[70%] p-4 space-y-4'>

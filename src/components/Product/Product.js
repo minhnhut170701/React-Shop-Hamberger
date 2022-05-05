@@ -10,7 +10,7 @@ const Product = ({name, img, decs, pirce, idItem}) => {
     
        
       <div className='overflow-hidden rounded-xl '>
-            <Link to={`/${idItem}`}
+            <Link to={`/${idItem}/banh-mi-hamburger`}
               key={idItem}>
               <img src={img} alt='error' className='hover:scale-105 transition-all duration-300 rounded-[10px]' />
             </Link>

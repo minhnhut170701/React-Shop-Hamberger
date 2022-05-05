@@ -50,13 +50,13 @@ function App() {
           <AuthProvider>
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route path=":invoiceId" element={<DetailItem />} >
+                <Route path=":invoiceId/banh-mi-hamburger" element={<DetailItem />} >
                       <Route path="des" element={<Desciption />} />
                       <Route path="review" element={<Review />} />  
                 </Route>
                 <Route path='/cart' element={<Cart />} />
                 <Route path='/blog' element={<Blogs />} />
-                <Route path='/banh-mi-hamburger' element={<BlogItem />} />
+                <Route path='/blog/banh-mi-hamburger' element={<BlogItem />} />
                 <Route path='/checkout' element={<Pay />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/signup' element={<SignUp />} />
