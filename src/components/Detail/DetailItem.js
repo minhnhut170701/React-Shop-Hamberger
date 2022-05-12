@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useParams } from "react-router-dom";
 import { getInvoice } from "../../data/item";
 import { Link, Outlet } from "react-router-dom";
@@ -16,7 +16,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 //conponents
 import Header from "../Header/Menu";
 import Product from "../Product/Product"
-
 import InforItem from './InforItem';
 
 const DetailItem = () => {
@@ -30,6 +29,10 @@ const DetailItem = () => {
     let params = useParams();
     // lấy các thuộc tính
     let invoice = getInvoice(parseInt(params.invoiceId, 10));
+
+    useEffect(() =>{
+        document.title = invoice.name
+    })
     return (
         <>
          <div className=' max-w-full '>
