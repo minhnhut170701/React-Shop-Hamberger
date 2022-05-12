@@ -12,7 +12,8 @@ const Product = ({name, img, decs, pirce, idItem}) => {
       <div className='overflow-hidden rounded-xl '>
             <Link to={`/${idItem}/banh-mi-hamburger`}
               key={idItem}>
-              <img src={img} alt='error' className='hover:scale-105 transition-all duration-300 rounded-[10px]' />
+              <img src={img} alt={name} className='hover:scale-105 transition-all duration-300 rounded-[10px]
+              w-full h-[50%]' loading='lazy' />
             </Link>
             <div className=' border-gray-300 border relative z-10 bg-white -top-3 space-y-4 rounded-b-[20px] 
             p-4'>

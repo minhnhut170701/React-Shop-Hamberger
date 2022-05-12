@@ -34,17 +34,20 @@ import { AuthProvider } from './contexts/AuthContext';
 import BlogItem from './components/Blog/BlogItem';
 
 
-
+import { Helmet } from 'react-helmet';
 
 const store = createStore(reducer)
 
 
 function App() {
 
-  
-  
   return (
     <Provider store={store}>
+       <Helmet>
+        <title>Nhà hàng Hamburger</title>
+        <meta name="description" content="Nhà hàng của chúng tôi chuyên cung cấp các loại bánh mì hamburger thượng hạng" />
+        <meta name="theme-color" content="#008f68" />
+      </Helmet>
       <BrowserRouter>
       <ScrolltoTop />
           <AuthProvider>

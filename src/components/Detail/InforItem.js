@@ -24,7 +24,7 @@ const InforItem = () => {
   return (
          <div className='lg:flex lg:space-x-20 max-w-4xl mr-auto ml-auto mt-10 p-4'>
                 <div className='w-full'>
-                    <img src={`${invoice.img}`} alt="error" className=' h-[450px] object-cover' />
+                    <img src={`${invoice.img}`} alt={invoice.name} loading='lazy' className=' w-full h-[450px] object-cover' />
                 </div>
 
                 <div>

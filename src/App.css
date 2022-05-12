@@ -78,16 +78,3 @@ input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
 }
 
-.awssld__content p:nth-child(n) {
-  font-size: 2rem !important;
-}
-
-@media (max-width: 500px) {
-  .awssld__content p:nth-child(n) {
-    font-size: 1.5rem !important;
-  }
-
-  .awssld__controls__arrow-left, .awssld__controls__arrow-right{
-    display: none;
-  }
-}

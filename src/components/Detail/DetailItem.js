@@ -12,7 +12,7 @@ import logo from "../../images/logo-01.png";
 import MenuIcon from '@mui/icons-material/Menu';
 
 
-
+import {Helmet} from "react-helmet";
 //conponents
 import Header from "../Header/Menu";
 import Product from "../Product/Product"
@@ -22,26 +22,25 @@ const DetailItem = () => {
     
     const [isOn, setOn] = useState(false)
 
-    
-
-    
     // lấy id được truyền vào
     let params = useParams();
     // lấy các thuộc tính
     let invoice = getInvoice(parseInt(params.invoiceId, 10));
-
-    useEffect(() =>{
-        document.title = invoice.name
-    })
+   
     return (
         <>
          <div className=' max-w-full '>
+            <Helmet htmlAttributes>
+                <meta charSet="utf-8" />
+                <title>{invoice.name}</title>
+                <meta name="description" content={invoice.decs} />
+            </Helmet>
             <div className='bg-hero-pattern h-[400px] bg-cover'>
             <div className='sm:hidden'>
                 <Header />
             </div>
             <div className='md:hidden flex items-center p-4 justify-between'>
-                <Link to="/"><img src={logo} alt="error" className='w-28 h-20' /></Link>
+                <Link to="/"><img src={logo} alt='logo' loading='lazy' className='w-28 h-20' /></Link>
                 <div className='text-white'><MenuIcon  fontSize='large'/></div>  
             </div>
                 
