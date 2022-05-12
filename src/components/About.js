@@ -21,19 +21,19 @@ const About = () => {
             {/* Icon */}
             <div className='flex items-center justify-center space-x-4 mt-10'>
               <div className='flex flex-col items-center justify-center'>
-                <img src={burger} alt='error' className='w-15 h-15 mt-3' />
+                <img title='burger' src={burger} alt='error' className='w-15 h-15 mt-3' />
                 <p className='font-bold text-lg'>BURGERS</p>
               </div>
               <div className='flex flex-col items-center justify-center'>
-               <img src={fire} alt='error' className='w-15 h-15 mt-3' />
+               <img title='fire' src={fire} alt='error' className='w-15 h-15 mt-3' />
                <p className='font-bold text-lg'>FRIES</p>
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <img src={ckicken} alt='error' className='w-15 h-15 mt-1' />
+                <img title='ckicken' src={ckicken} alt='error' className='w-15 h-15 mt-1' />
                 <p className='font-bold text-lg'>CHICKEN</p>
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <img src={salad} alt='error' className='w-15 h-15 -mt-1' />
+                <img title='salad' src={salad} alt='error' className='w-15 h-15 -mt-1' />
                 <p className='font-bold text-lg'>SALADS</p>
               </div>
             </div>
