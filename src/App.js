@@ -45,7 +45,8 @@ function App() {
     <Provider store={store}>
        <Helmet>
         <title>Nhà hàng Hamburger</title>
-        <meta name="description" content="Nhà hàng của chúng tôi chuyên cung cấp các loại bánh mì hamburger thượng hạng" />
+        <meta name="description" content="Nhà hàng của chúng tôi chuyên cung cấp các loại bánh mì hamburger thượng hạng 
+        mang đến cho bạn những chiếc hamburger nguyên vị từ tay những đầu bếp nổi tiếng và chúng tôi nói không với burger kém chất lượng" />
         <meta name="theme-color" content="#008f68" />
       </Helmet>
       <BrowserRouter>

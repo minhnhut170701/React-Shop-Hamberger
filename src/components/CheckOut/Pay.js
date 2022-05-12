@@ -20,6 +20,7 @@ import logo from "../../images/logo-01.png";
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { Link } from "react-router-dom"
+import {Helmet} from "react-helmet";
 
 const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
@@ -105,6 +106,11 @@ const Pay = () => {
 
   return (
     <div>
+      <Helmet htmlAttributes>
+        <meta charSet="utf-8" />
+        <title>Checkout Page</title>
+      </Helmet>
+
         <div className='bg-checkout-pattern bg-cover bg-center border h-[250px]'>
           <div className='sm:hidden'>
             <Menu />

@@ -16,10 +16,16 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import BlogPage from './BlogPage';
 import MostRead from './MostRead';
-
+import {Helmet} from "react-helmet";
 const Blogs = () => {
   return (
     <div>
+         <Helmet htmlAttributes>
+                <meta charSet="utf-8" />
+                <title>Blog Page</title>
+                <meta name="description" content="Bạn có thể xem những chia sẽ từ chính những thực khách đã sử dụng
+                cũng như tham khảo một vài loại burger nổi tiếng" />
+            </Helmet>
         {/* container header */}
         <div className='bg-blog-pattern h-[400px] flex'>
             <Header />

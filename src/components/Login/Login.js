@@ -4,7 +4,7 @@ import { Link, useNavigate} from "react-router-dom"
 
 
 import banner from "../../images/login.jpg";
-
+import {Helmet} from "react-helmet";
 
 const Login = () => {
   const emailRef = useRef()
@@ -33,6 +33,10 @@ const Login = () => {
       <section className='md:flex
       border max-w-6xl ml-auto mr-auto mt-28 mb-16 rounded-md'>
         {/* banner */}
+        <Helmet htmlAttributes>
+                <meta charSet="utf-8" />
+                <title>Login Page</title>
+            </Helmet>
         <div className=' md:w-[60%] relative'>
            <img src={banner} alt="error" className='h-[600px] rounded-md' />
            <div className='absolute left-36 bottom-44  text-white text-center leading-5'>

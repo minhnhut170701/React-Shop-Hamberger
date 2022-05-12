@@ -12,7 +12,7 @@ const MostRead = ({name, img, desc, comment,fav}) => {
                     <img src={img} alt="error" className='w-full hover:scale-110 transition-all duration-400 ease-in-out'/>
                 </div>
                 <div className='mt-5 w-[100%] space-y-4 h-[300px]'>
-                    <h1 className='text-2xl font-bold'>{name}</h1>
+                    <h2 className='text-2xl font-bold'>{name}</h2>
                     <p className='text-gray-400'>{desc}</p>
                     <div className='flex items-center space-x-5'>
                         <section className='text-gray-400 flex items-center space-x-2'>

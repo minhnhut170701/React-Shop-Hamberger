@@ -16,11 +16,15 @@ import logo from "../../images/logo-01.png";
 import MenuIcon from '@mui/icons-material/Menu';
 
 import {Link} from "react-router-dom"
-
+import {Helmet} from "react-helmet";
 const Cart = () => {
   
   return (
     <div className='max-w-full'>
+        <Helmet htmlAttributes>
+                <meta charSet="utf-8" />
+                <title>Cart Page</title>
+            </Helmet>
         {/* Header */}
         <div className='bg-cart-pattern bg-cover h-[400px]'>
           <div className='sm:hidden'>

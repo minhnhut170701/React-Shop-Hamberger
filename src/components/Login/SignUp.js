@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { Link,useNavigate } from "react-router-dom"
 import banner from "../../images/login.jpg";
+import {Helmet} from "react-helmet";
 const SignUp = () => {
     const emailRef = useRef();
     const passwordRef = useRef();
@@ -32,6 +33,10 @@ const SignUp = () => {
   return (
     <section className='md:flex 
     border max-w-6xl ml-auto mr-auto mt-28 mb-16 rounded-md'>
+      <Helmet htmlAttributes>
+                <meta charSet="utf-8" />
+                <title>Signup Page</title>
+            </Helmet>
       {/* banner */}
       <div className=' md:w-[60%] relative'>
            <img src={banner} alt="error" className='h-[600px] rounded-md' />
