@@ -15,7 +15,7 @@ const About = () => {
     items-centerjustify-center ml-auto mr-auto pt-24 lg:space-x-4'>
        <img src={aboutBanner} alt="error" className='lg:w-[50%] h-[700px] -mt-[300px] lg:-mt-0 ml-auto mr-auto' />
        <div className='lg:max-w-[40%]'>
-            <h1 className=' font-bold text-5xl text-red-900'>NOTHING BRINGS PEOPLE TOGETHER LIKE A GOOD BURGER</h1>
+            <h2 className=' font-bold text-5xl text-red-900'>NOTHING BRINGS PEOPLE TOGETHER LIKE A GOOD BURGER</h2>
             <p className='mt-4 text-gray-600 text-lg'>Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor 
             lacinia cubilia curae at integer orci congue and metus in mollislorem primis gravida</p>
             {/* Icon */}

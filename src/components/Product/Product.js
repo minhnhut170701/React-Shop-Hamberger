@@ -30,7 +30,7 @@ const Product = ({name, img, decs, pirce, idItem}) => {
 
               {/* name */}
               <div className='w-64 ml-auto mr-auto space-y-4'>
-                <h1 className=' font-bold text-xl text-[#642f21]'>{name}</h1>
+                <h2 className=' font-bold text-xl text-[#642f21]'>{name}</h2>
                 <p className='text-[#7d7f7d] max-h-12 overflow-hidden'>{decs}</p>
                 <div className=' bg-[#642f21] w-20 rounded-md'>
                   <h5 className='text-[#f7be27] text-xl font-bold text-center'>$ {pirce}</h5>

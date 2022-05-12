@@ -43,9 +43,8 @@ const DetailItem = () => {
                 <Link to="/"><img src={logo} alt='logo' loading='lazy' className='w-28 h-20' /></Link>
                 <div className='text-white'><MenuIcon  fontSize='large'/></div>  
             </div>
-                
-                <p className='text-4xl font-bold text-white
-                text-center relative top-44 '>{invoice.name}</p>
+                <h1 className='text-4xl font-bold text-white
+                text-center relative top-44 '>{invoice.name}</h1>
             </div>
             <InforItem />
 
@@ -72,10 +71,10 @@ const DetailItem = () => {
 
                 
             <div className='bg-[#f6f9fa] max-w-full flex items-center flex-col mt-10 pb-20'>
-                    <h1 className='pt-10 max-w-4xl text-center text-gray-400'>
+                    <h2 className='pt-10 max-w-4xl text-center text-gray-400'>
                     Aliquam a augue suscipit, luctus  neque purus ipsum neque undo <br/>
                     dolor primis libero tempus, blandit a cursus varius magna
-                    </h1>
+                    </h2>
                     <div className='max-w-6xl lg:flex items-center mt-14 lg:space-x-3'>
                         {PRODUCTS.slice(0,4).map((item) =>(
                         <Product  key={item.id} name={item.name} img={item.img} decs={item.decs} 

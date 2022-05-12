@@ -48,7 +48,7 @@ const Products = () => {
        <div className='max-w-6xl ml-auto mr-auto'>
            {/* about */}
            <div className='flex items-center justify-center flex-col w-[50%] text-center ml-auto mr-auto'>
-               <h1 className='text-red-600 font-bold text-5xl'>EXPLORE OUR MENU</h1>
+               <h2 className='text-red-600 font-bold text-5xl'>EXPLORE OUR MENU</h2>
                <p className='mt-4 text-[#888] text-xl font-sans font-light'>
                Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor primis libero tempus, blandit a cursus varius magna
                </p>

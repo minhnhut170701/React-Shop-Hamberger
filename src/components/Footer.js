@@ -13,10 +13,10 @@ const Footer = () => {
                 </div>
 
                 <div className=' flex flex-col space-y-2 font-bold text-xl'>
-                    <h1>Los Angeles,</h1>
+                    <h2>Los Angeles,</h2>
                     <a href='https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+C%C3%B4ng+Ngh%E1%BB%87+%C4%90%E1%BB%93ng+Nai/@10.9846076,106.8691285,15z/data=!4m5!3m4!1s0x0:0x3ff1538c511f05d7!8m2!3d10.9846076!4d106.8691285' 
                     target='_blank' rel="noreferrer">
-                      <h1>8721 M Central Avenue, CA 90036</h1>
+                      <h2>8721 M Central Avenue, CA 90036</h2>
                     </a>
                     <a href='https://www.facebook.com/key.boysin/' target='_blank' rel="noreferrer"><h2>Email: hello@yourdomain.com</h2></a>
                     <p>Call Now: <span className='text-yellow-500'>789-654-3210</span></p>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
        <div className='max-w-6xl mr-auto ml-auto pb-4'>
           <ul className='flex items-center space-x-4'>
-              <li><h1 className='font-bold text-lg'>Liên quan: </h1></li>
+              <li><h2 className='font-bold text-lg'>Liên quan: </h2></li>
               <li>
                 <a href='https://www.bachhoaxanh.com/kinh-nghiem-hay/4-cach-lam-banh-mi-hamburger-ngon-don-gian-tai-nha-1408310'>
                     Cách làm bành mì hamburger
