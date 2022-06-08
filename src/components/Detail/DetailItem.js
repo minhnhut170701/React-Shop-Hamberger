@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { getInvoice } from "../../data/item";
 import { Link, Outlet } from "react-router-dom";
 
-
+import { Tab } from '@headlessui/react'
+import des from '../../data/descriptiom';
 
 import PRODUCTS from "../../data/item";
 //logo-menu
@@ -17,15 +18,20 @@ import {Helmet} from "react-helmet";
 import Header from "../Header/Menu";
 import Product from "../Product/Product"
 import InforItem from './InforItem';
+import Desciption from './Desciption';
+import Review from './Review';
 
 const DetailItem = () => {
     
     const [isOn, setOn] = useState(false)
-
+    const [data, setData] = useState(des)
     // lấy id được truyền vào
     let params = useParams();
     // lấy các thuộc tính
     let invoice = getInvoice(parseInt(params.invoiceId, 10));
+
+    const description = data.find((item) => item.id === parseInt(params.invoiceId, 10))
+
    
     return (
         <>
@@ -49,21 +55,28 @@ const DetailItem = () => {
             <InforItem />
 
             <div className='mt-20 max-w-4xl ml-auto mr-auto'>
-                <div className='flex justify-center items-center space-x-6'>
-                        <Link to="des" onClick={() => setOn(false)}
-                            className={ isOn ? "bg-transparent p-4 font-bold" : "bg-yellow-400 p-4 font-bold"} >
-                                    Description
-                        </Link>  
-                       
-                 
-                        <Link to="review" onClick={() => setOn(true)}
-                        className={ !isOn ? "bg-transparent p-4 font-bold" : "bg-yellow-400 p-4 font-bold"}>
-                                Review
-                        </Link>
-                   
+                <div>
+                <Tab.Group>
+                    <Tab.List className="flex items-center justify-center">
+                        <Tab onClick={() => setOn(false)}
+                            className={ isOn ? "bg-transparent p-4 font-bold outline-none" : "bg-yellow-400 p-4 font-bold outline-none"}>
+                                Description
+                        </Tab>
+                        <Tab onClick={() => setOn(true)}
+                        className={ !isOn ? "bg-transparent p-4 font-bold outline-none" : "bg-yellow-400 p-4 font-bold outline-none"}>
+                            Review
+                        </Tab>
+                      
+                    </Tab.List>
+                    <Tab.Panels>
+                        <Tab.Panel><Desciption data={description} /></Tab.Panel>
+                        <Tab.Panel><Review /></Tab.Panel>
+                    </Tab.Panels>
+                </Tab.Group>
+                         
                 </div>
                 {/* Infor for screen above */}
-                <Outlet />
+               
               
 
                

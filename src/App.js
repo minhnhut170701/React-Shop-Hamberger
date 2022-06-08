@@ -16,8 +16,6 @@ import Home from './components/Home';
 import DetailItem from './components/Detail/DetailItem';
 import ScrolltoTop from './components/ScrolltoTop';
 import Footer from './components/Footer';
-import Desciption from './components/Detail/Desciption';
-import Review from './components/Detail/Review';
 import Cart from './components/CartPage/Cart';
 
 //redux
@@ -54,10 +52,7 @@ function App() {
           <AuthProvider>
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route path=":invoiceId/banh-mi-hamburger" element={<DetailItem />} >
-                      <Route path="des" element={<Desciption />} />
-                      <Route path="review" element={<Review />} />  
-                </Route>
+                <Route path=":invoiceId/banh-mi-hamburger" element={<DetailItem />} />
                 <Route path='/cart' element={<Cart />} />
                 <Route path='/blog' element={<Blogs />} />
                 <Route path='/blog/banh-mi-hamburger' element={<BlogItem />} />
