@@ -6,7 +6,7 @@ import logo from "../images/logo-01.png";
 const Footer = () => {
   return (
     <div className='max-w-full'>
-        <div className='lg:flex justify-around items-center max-w-6xl mr-auto ml-auto p-20'>
+        <div className='lg:flex justify-around items-center max-w-6xl mr-auto ml-auto lg:p-20 p-10'>
                 <div className=' flex flex-col space-y-2'>
                    <Link to="/"><img src={logo} alt="logo" className='w-56 h-28' /> </Link>
                     <p>© 2020 Testo. All Rights Reserved</p>
@@ -31,8 +31,8 @@ const Footer = () => {
                     <img className="w-20 h-20" src="https://jthemes.net/themes/html/testo/files/images/instagram/img-06.jpg" alt="error" />
                 </div>
         </div>
-       <div className='max-w-6xl mr-auto ml-auto pb-4'>
-          <ul className='flex items-center space-x-4'>
+       <div className='max-w-6xl mx-auto pb-4'>
+          <ul className='flex lg:items-center lg:space-x-4 flex-col lg:flex-row p-4 '>
               <li><h2 className='font-bold text-lg'>Liên quan: </h2></li>
               <li>
                 <a href='https://www.bachhoaxanh.com/kinh-nghiem-hay/4-cach-lam-banh-mi-hamburger-ngon-don-gian-tai-nha-1408310'>

@@ -48,8 +48,9 @@ const Cart = () => {
         </div>
 
         {/* Banner footer */}
-        <div className='flex items-center bg-[#ffc107] mt-28 relative lg:h-[410px] sm:h-[450px]'>
-            <div className='lg:space-y-3 lg:pl-44 sm:min-h-max'>
+        <div className='flex items-center bg-[#ffc107] mt-28 relative lg:h-[410px]
+        lg:flex-row space-y-6 lg:space-y-0 flex-col'>
+            <div className='lg:space-y-3 lg:pl-44 sm:min-h-max space-y-4 p-4'>
                 <h1 className='font-bold text-2xl text-[#642f21] sm:text-xl'>DOWNLOAD MOBILE APP AND</h1>
                 <h1 className='font-bold text-6xl text-[#642f21] sm:text-lg'>SAVE UP TO 20%</h1>
                 <p className='w-[70%] text-[#642f21]'>Aliquam a augue suscipit, luctus neque purus ipsum and neque dolor primis libero tempus, blandit varius</p>

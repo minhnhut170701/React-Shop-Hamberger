@@ -7,8 +7,8 @@ import "../../App.css"
 const Checkout = () => {
   return (
     <>
-       <div className='lg:flex items-center lg:space-x-44 relative lg:-top-28'>
-           <form>
+       <div className='lg:flex items-center relative lg:-top-28'>
+           <form className='space-y-6 lg:space-y-0'>
                <input 
                type="text" 
                placeholder='Coupon Code' 
@@ -19,15 +19,16 @@ const Checkout = () => {
                hover:bg-white hover:text-[#e84e1d] hover:border-[#e84e1d] border transition-all duration-200'>
                    Apply Coupon
                </button>
-           </form>
-           <button className='uppercase p-2 
-           bg-[#e84e1d] text-white text-lg  font-medium
+               <button className='uppercase p-2 
+                bg-[#e84e1d] text-white text-lg  font-medium
                         hover:bg-white hover:text-[#e84e1d] hover:border-[#e84e1d] border transition-all duration-200'>
                      Update cart
             </button>
+           </form>
+           
        </div>
             
-       <div className='lg:ml-14 relative pt-28 bg-[#f6f9fa] p-20 mt-10'>
+       <div className='lg:ml-14 relative pt-28 bg-[#f6f9fa] lg:p-20 p-10 mt-10'>
             <div>
                 <h1 className='text-xl font-bold uppercase'>Cart Total</h1>
                 <div className='flex items-center justify-between pt-4 pb-4 border-b-2'>
